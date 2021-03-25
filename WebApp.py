@@ -17,7 +17,6 @@ def import_and_predict(image_data, model):
 model = tf.keras.models.load_model('/content/drive/MyDrive/Data_set/Tumor_CNN.hdf5')
 class_names = ['Normal Brain', 'Tumorous Brain']
 
-st.beta_set_page_config(page_title='Brain Tumor Detection')
 
 
 st.write("""
