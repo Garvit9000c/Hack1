@@ -28,7 +28,7 @@ else:
     image = Image.open(file)
     st.image(image, use_column_width=True)
     prediction = import_and_predict(image, model)
-    score = tf.nn.softmax(predictions)
+    score = tf.nn.softmax(prediction)
     if np.argmax(prediction) == 0:
         st.write("The Brain is Normal!")
     else:
