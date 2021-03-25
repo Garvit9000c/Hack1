@@ -15,7 +15,7 @@ def import_and_predict(image_data, model):
         return prediction
 
 model = tf.keras.models.load_model('/content/drive/MyDrive/Data_set/Tumor_CNN.hdf5')
-
+class_names = ['Normal Brain', 'Tumorous Brain']
 st.write("""
          # Early Stage Brain Tumor Detection Using Convoluted Neural Network
          """
@@ -28,9 +28,10 @@ else:
     image = Image.open(file)
     st.image(image, use_column_width=True)
     prediction = import_and_predict(image, model)
+    score = tf.nn.softmax(predictions)
     if np.argmax(prediction) == 0:
         st.write("The Brain is Normal!")
     else:
         st.write("Tumor Detected!")
-    st.text("Probability (0: Non-Tumorous, 1: Tumorous")
-    st.write(prediction)
+    st.write("This image most likely belongs to {} with a {:.2f} percent confidence."
+      .format(class_names[np.argmax(score)], 100 * np.max(score)))
