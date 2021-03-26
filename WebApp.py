@@ -5,7 +5,7 @@ import cv2
 from PIL import Image, ImageOps
 import numpy as np
 
-st.set_page_config(page_title="Brain Tumor Delected", page_icon=None, layout='centered', initial_sidebar_state='auto')
+st.set_page_config(page_title="Brain Tumor Delector", page_icon="favicon.jpeg", layout='centered', initial_sidebar_state='auto')
 
 URL='https://drive.google.com/drive/folders/1L--z7-1LftMeWfxjgWpEe7qo6r_BqEYi?usp=sharing'
 def import_and_predict(image_data, model):
