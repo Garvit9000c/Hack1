@@ -53,14 +53,14 @@ h1:first-of-type, .css-j8zjtb, .css-145kmo2, p{
     color: #FFF3C2;
     font-family: 'Fira Sans', sans-serif;
 }
-.css-h2raq8 a{
+.css-h2raq8 a, .css-1syfshr{
     color: #333;
     border: 1px solid #FFF3C2;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 5px;
     background: #FFF3C2;
 }
-.css-h2raq8 a:hover{
+.css-h2raq8 a:hover, .css-1syfshr{
     background: transparent;
     color: #FFF3C2;
 }
