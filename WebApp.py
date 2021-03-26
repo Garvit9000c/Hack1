@@ -48,7 +48,9 @@ st.markdown(
 .css-1v3fvcr{
     background: linear-gradient(90deg, rgba(12,2,179,1) 0%, rgba(20,20,202,1) 35%, rgba(0,212,255,1) 100%);
 }
-
+h1:first-of-type, .css-j8zjtb, .css-145kmo2{
+    color: #FFF3C2;
+}
 </style>
 """,
     unsafe_allow_html=True,
