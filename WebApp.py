@@ -3,7 +3,7 @@ import streamlit as st
 import cv2
 from PIL import Image, ImageOps
 import numpy as np
-URL=https://drive.google.com/drive/folders/1L--z7-1LftMeWfxjgWpEe7qo6r_BqEYi?usp=sharing
+URL='https://drive.google.com/drive/folders/1L--z7-1LftMeWfxjgWpEe7qo6r_BqEYi?usp=sharing'
 def import_and_predict(image_data, model):
         size = (100,100)    
         image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
