@@ -27,7 +27,7 @@ st.write("""
 file = st.file_uploader("Please upload an image file", type=["jpg"])
 st.markdown(URL, unsafe_allow_html=True)
 if file is None:
-    st.text("Please upload an image file")
+    st.text("Please upload an MRI image file")
 else:
     image = Image.open(file)
     st.image(image, use_column_width=True)
