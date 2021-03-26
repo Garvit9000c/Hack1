@@ -4,7 +4,7 @@ import cv2
 from PIL import Image, ImageOps
 import numpy as np
 
-st.set_page_config(page_title="Brain Tumor Delector", page_icon="favicon.jpeg", layout='centered', initial_sidebar_state='auto')
+st.set_page_config(page_title="Brain Tumor Delector", page_icon=None, layout='centered', initial_sidebar_state='auto')
 
 URL='[Download Sample Testing Data](https://drive.google.com/drive/folders/1L--z7-1LftMeWfxjgWpEe7qo6r_BqEYi?usp=sharing)'
 
@@ -49,7 +49,7 @@ st.markdown(
 .css-1v3fvcr{
     background: linear-gradient(90deg, rgba(12,2,179,1) 0%, rgba(20,20,202,1) 35%, rgba(0,212,255,1) 100%);
 }
-h1:first-of-type, .css-j8zjtb, .css-145kmo2, p{
+h1:first-of-type, .css-j8zjtb, .css-145kmo2, p, .css-1uixxvy{
     color: #FFF3C2;
     font-family: 'Fira Sans', sans-serif;
 }
