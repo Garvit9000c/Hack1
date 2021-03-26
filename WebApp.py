@@ -6,7 +6,8 @@ import numpy as np
 
 st.set_page_config(page_title="Brain Tumor Delector", page_icon="favicon.jpeg", layout='centered', initial_sidebar_state='auto')
 
-URL='https://drive.google.com/drive/folders/1L--z7-1LftMeWfxjgWpEe7qo6r_BqEYi?usp=sharing'
+URL='[Drive](https://drive.google.com/drive/folders/1L--z7-1LftMeWfxjgWpEe7qo6r_BqEYi?usp=sharing)'
+
 def import_and_predict(image_data, model):
         size = (100,100)    
         image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
