@@ -39,3 +39,17 @@ else:
         st.write("Tumor Detected!")
     st.write("This image most likely belongs to {} with a {:.2f} percent confidence."
       .format(class_names[np.argmax(score)], 100 * np.max(score)))
+
+
+#Styling Code
+st.markdown(
+    """
+<style>
+.css-1v3fvcr{
+    background: linear-gradient(90deg, rgba(12,2,179,1) 0%, rgba(20,20,202,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+</style>
+""",
+    unsafe_allow_html=True,
+)
