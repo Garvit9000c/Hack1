@@ -1,6 +1,5 @@
 import tensorflow as tf
 import streamlit as st
-import webbrowser
 import cv2
 from PIL import Image, ImageOps
 import numpy as np
@@ -27,7 +26,7 @@ st.write("""
 file = st.file_uploader("Please upload an image file", type=["jpg"])
 submit = st.button('Download Sample Testing Data')
 if submit:
-    webbrowser.open_new_tab(URL)
+    st.markdown(URL, unsafe_allow_html=True)
 if file is None:
     st.text("Please upload an image file")
 else:
