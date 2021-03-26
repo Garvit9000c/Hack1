@@ -24,7 +24,7 @@ st.write("""
          # Early Stage Brain Tumor Detection Using Convoluted Neural Network
          """
          )
-file = st.file_uploader("Please upload an image file", type=["jpg"])
+file = st.file_uploader("Please upload an MRI image file", type=["jpg"])
 st.markdown(URL, unsafe_allow_html=True)
 if file is None:
     st.text("Please upload an MRI image file")
