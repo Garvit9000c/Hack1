@@ -6,7 +6,7 @@ import numpy as np
 
 st.set_page_config(page_title="Brain Tumor Delector", page_icon="favicon.jpeg", layout='centered', initial_sidebar_state='auto')
 
-URL='[Drive](https://drive.google.com/drive/folders/1L--z7-1LftMeWfxjgWpEe7qo6r_BqEYi?usp=sharing)'
+URL='[Download Sample Testing Data](https://drive.google.com/drive/folders/1L--z7-1LftMeWfxjgWpEe7qo6r_BqEYi?usp=sharing)'
 
 def import_and_predict(image_data, model):
         size = (100,100)    
@@ -25,9 +25,7 @@ st.write("""
          """
          )
 file = st.file_uploader("Please upload an image file", type=["jpg"])
-submit = st.button('Download Sample Testing Data')
-if submit:
-    st.markdown(URL, unsafe_allow_html=True)
+st.markdown(URL, unsafe_allow_html=True)
 if file is None:
     st.text("Please upload an image file")
 else:
