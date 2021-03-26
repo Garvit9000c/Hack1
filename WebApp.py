@@ -14,7 +14,7 @@ def import_and_predict(image_data, model):
         prediction = model.predict(img_reshape)
         return prediction
 
-model = tf.keras.models.load_model('/content/drive/MyDrive/Data_set/Tumor_CNN.hdf5')
+model = tf.keras.models.load_model('/content/Tumor_CNN.hdf5')
 class_names = ['Normal Brain', 'Tumorous Brain']
 st.write("""
          # Early Stage Brain Tumor Detection Using Convoluted Neural Network
