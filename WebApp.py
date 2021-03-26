@@ -70,6 +70,9 @@ h1:first-of-type, .css-j8zjtb, .css-145kmo2, p{
 .css-qipsc5{
     border: 1px solid #000;
 }
+.css-1o4i7as{
+    margin: 8vh 0;
+}
 </style>
 """,
     unsafe_allow_html=True,
