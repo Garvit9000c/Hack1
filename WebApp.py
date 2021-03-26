@@ -1,5 +1,6 @@
 import tensorflow as tf
 import streamlit as st
+import webbrowser
 import cv2
 from PIL import Image, ImageOps
 import numpy as np
