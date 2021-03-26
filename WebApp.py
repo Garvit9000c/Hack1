@@ -24,7 +24,7 @@ st.write("""
 file = st.file_uploader("Please upload an image file", type=["jpg"])
 submit = st.button('Download Sample Testing Data')
 if submit:
-    webbrowser.open(URL, new=2)
+    webbrowser.open_new_tab(URL)
 if file is None:
     st.text("Please upload an image file")
 else:
