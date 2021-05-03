@@ -1,6 +1,6 @@
 # TumorCNN
 ...
-1Medical check-ups at times can be very time consuming and costly. For example, if a patient needs to get checked up for a possible Brain Tumor condition then the patient has to go through multiple layers of processing to get the final result.
+Medical check-ups at times can be very time consuming and costly. For example, if a patient needs to get checked up for a possible Brain Tumor condition then the patient has to go through multiple layers of processing to get the final result.
 
 First, the patient needs to visit a doctor who might further refer the patient to get an MRI scan and then an MRI image will be processed and then sent to the doctor who will conclude whether the person is suffering from a brain tumour or not.
 
